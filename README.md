@@ -33,41 +33,84 @@ After logging in successfully, a list of all host families under the user's acco
 
 ## Supported devices
 
-| Name                                     | Function                                                     |
-| :--------------------------------------- | ------------------------------------------------------------ |
-| Zero-fire single switch                  | switch                                                       |
-| Zero-fire double switch                  | switch                                                       |
-| Zero-fire triple switch                  | switch                                                       |
-| Zero-fire four switch                    | switch                                                       |
-| Smart light strip controller             | switch、brightness、color temperature、color                 |
-| Smart color temperature light controller | switch、brightness、color temperature                        |
-| Smart dimming controller                 | switch、brightness                                           |
-| Dimmer switch                            | switch、brightness、color temperature                        |
-| Smart spotlight                          | switch、brightness、color temperature                        |
-| Smart door/window sensor                 | battery level、working mode、 opening and closing status     |
-| Infrared curtain detector                | battery level、 light intensity、 alarm status               |
-| AI super sensor                          | working mode、 lighting、 body movement characteristics、 whether there are people or not |
-| Dual-detection sensor                    | working mode、 lighting、 body movement characteristics、 whether there are people or not |
-| Temperature and humidity sensor          | battery power、 temperature and humidity status              |
-| Four-in-one air box（PM2.5）             | light、 temperature、 humidity、pm2.5                        |
-| Four-in-one air sensor（PM2.5）          | light、 temperature、 humidity、pm2.5                        |
-| Four-in-one air sensor（formaldehyde）   | light、 temperature、 humidity、formaldehyde                 |
-| Four-in-one air sensor（CO2）            | light、 temperature、 humidity、co2                          |
-| Five-in-one air sensor（CO2）            | light、 temperature、 humidity、co2、TVOC                    |
-| Seven-in-one air box                     | light、 temperature、 humidity、co2、pm2.5、noise、formaldehyde |
-| Seven-in-one air box（TVOC）             | light、 temperature、 humidity、co2、pm2.5、noise、TVOC      |
-| Seven-in-one air sensor                  | light、 temperature、 humidity、co2、pm2.5、noise、formaldehyde |
-| Seven-in-one air sensor（TVOC）          | light、 temperature、 humidity、co2、pm2.5、noise、TVOC      |
-| Eight-in-one air box                     | light、 temperature、 humidity、co2、pm2.5、noise、formaldehyde、TVOC |
-| Eight-in-one air sensor                  | light、 temperature、 humidity、co2、pm2.5、noise、formaldehyde、TVOC |
-| Single-channel motor panel               | on、off、pause                                               |
-| Dual-channel motor panel                 | on、off、pause                                               |
-| Smart curtain motor                      | on、off、pause、opening and closing degree                   |
-| Smart roller blind motor                 | on、off、pause、opening and closing degree                   |
-| Lithium battery smart curtain motor      | on、off、pause、opening and closing degree                   |
-| Smart sliding window opener              | on、off、pause、opening and closing degree                   |
-| Smart push-pull window opener            | on、off、pause、opening and closing degree                   |
-| Dooya tubular motor control box          | on、off、pause、opening and closing degree                   |
-| Dream curtain motor                      | on、off、pause、opening and closing degree、rotation angle   |
-| Six-in-one air sensor                    | light、 temperature、 humidity、co2、pm2.5、noise            |
+| Name                                                         | Function                                                     |
+| :----------------------------------------------------------- | ------------------------------------------------------------ |
+| Zero-fire single switch                                      | switch                                                       |
+| Zero-fire double switch                                      | switch                                                       |
+| Zero-fire triple switch                                      | switch                                                       |
+| Zero-fire four switch                                        | switch                                                       |
+| Smart light strip controller                                 | switch、brightness、color temperature、color                 |
+| Smart color temperature light controller                     | switch、brightness、color temperature                        |
+| Smart dimming controller                                     | switch、brightness                                           |
+| Dimmer switch                                                | switch、brightness、color temperature                        |
+| Smart spotlight                                              | switch、brightness、color temperature                        |
+| Smart door/window sensor                                     | battery level、working mode、 opening and closing status     |
+| Infrared curtain detector                                    | battery level、 light intensity、 alarm status               |
+| AI super sensor                                              | working mode、 lighting、 body movement characteristics、 whether there are people or not |
+| Dual-detection sensor                                        | working mode、 lighting、 body movement characteristics、 whether there are people or not |
+| Temperature and humidity sensor                              | battery power、 temperature and humidity status              |
+| Four-in-one air box（PM2.5）                                 | light、 temperature、 humidity、pm2.5                        |
+| Four-in-one air sensor（PM2.5）                              | light、 temperature、 humidity、pm2.5                        |
+| Four-in-one air sensor（formaldehyde）                       | light、 temperature、 humidity、formaldehyde                 |
+| Four-in-one air sensor（CO2）                                | light、 temperature、 humidity、co2                          |
+| Five-in-one air sensor（CO2）                                | light、 temperature、 humidity、co2、TVOC                    |
+| Seven-in-one air box                                         | light、 temperature、 humidity、co2、pm2.5、noise、formaldehyde |
+| Seven-in-one air box（TVOC）                                 | light、 temperature、 humidity、co2、pm2.5、noise、TVOC      |
+| Seven-in-one air sensor                                      | light、 temperature、 humidity、co2、pm2.5、noise、formaldehyde |
+| Seven-in-one air sensor（TVOC）                              | light、 temperature、 humidity、co2、pm2.5、noise、TVOC      |
+| Eight-in-one air box                                         | light、 temperature、 humidity、co2、pm2.5、noise、formaldehyde、TVOC |
+| Eight-in-one air sensor                                      | light、 temperature、 humidity、co2、pm2.5、noise、formaldehyde、TVOC |
+| Single-channel motor panel                                   | on、off、pause                                               |
+| Dual-channel motor panel                                     | on、off、pause                                               |
+| Smart curtain motor                                          | on、off、pause、opening and closing degree                   |
+| Smart roller blind motor                                     | on、off、pause、opening and closing degree                   |
+| Lithium battery smart curtain motor                          | on、off、pause、opening and closing degree                   |
+| Smart sliding window opener                                  | on、off、pause、opening and closing degree                   |
+| Smart push-pull window opener                                | on、off、pause、opening and closing degree                   |
+| Dooya tubular motor control box                              | on、off、pause、opening and closing degree                   |
+| Dream curtain motor                                          | on、off、pause、opening and closing degree、rotation angle   |
+| Six-in-one air sensor                                        | light、 temperature、 humidity、co2、pm2.5、noise            |
+| Water leak detector                                          | Battery Level 、Alarm Status                                 |
+| Smoke detector                                               | Battery Level 、Alarm Status                                 |
+| Combustible gas detector                                     | Battery Level 、Alarm Status                                 |
+| Emergency button                                             | Battery Level 、Alarm Status                                 |
+| 3-in-1 Smart Thermostat Control Series                       | Air conditioning (on, off, mode, temperature, wind speed), strong current fresh air (on, off, wind speed), water floor heating (on, off, temperature) |
+| 3-in-1 Premium Smart Thermostat Series                       | Air conditioning (on, off, mode, temperature, wind speed), strong current fresh air (on, off, wind speed), water floor heating (on, off, temperature) |
+| Central Air Conditioning intelligent Gateway Engineering version | on、off、mode、 temperature、wind speed                      |
+| Universal version of intelligent Gateway for Central Air conditioning | on、off、mode、 temperature、wind speed                      |
+| Air conditioning thermostat E series                         | on、off、mode、 temperature、wind speed                      |
+| Fresh air temperature controller E series                    | on、off、wind speed                                          |
+| Fresh air temperature controller                             | on、off、wind speed                                          |
+| Water heating thermostat E                                   | on, off, temperature                                         |
+| Water floor heating thermostat                               | on、 off、 temperature                                       |
+| Water floor heating thermostat (3H1)                         | on、 off、temperature                                        |
+| Intelligent socket                                           | on、off                                                      |
+| Infrared smart socket                                        | on、 off、Codebase air conditioning                          |
+| Codebase air conditioning                                    | on、off、mode、 temperature、wind speed                      |
+| Scene                                                        | Synchronize the scenarios set by the UIOT APP                |
+| Three-in-one temperature controller C                        | Air conditioner (on, off, mode, temperature, wind speed), brand fresh air system (on, off, wind speed), electric floor heating (on, off, temperature) |
+| Full-screen Air Conditioning Gateway C/S/E                   | Brand air conditioners (on/off, mode, temperature, wind speed) |
+| Super Temperature Controller E                               | Brand air conditioners (on/off, mode, temperature, wind speed), brand fresh air (on/off, wind speed), strong current fresh air (on/off, wind speed), fan coil units (on/off, mode, temperature, wind speed) |
+| Floor heating panel                                          | Water floor heating (on/off, temperature), Electric floor heating (on/off, temperature) |
+| Composite panel                                              | Switch, curtain motor (on, off, pause)                       |
+| Intelligent magnetic color temperature lamp                  | switch、brightness、color temperature                        |
+| DALI dimming lamp                                            | switch、brightness                                           |
+| DALI color temperature lamp                                  | switch、brightness、color temperature                        |
+| Hvac control module                                          | Brand air conditioners (on, off, mode, temperature, wind speed), brand fresh air systems (on, off, wind speed), brand floor heating (on, off, temperature) |
+| Smart voice Speaker X10                                      | Voice control of devices in HA (plug-in supported, ready for use after platform upgrade) |
+| Fan coil unit temperature controller (3H1)                   | on、off、mode、 temperature、wind speed                      |
 
+## FAQ
+
+### Q1:4.0 Account login prompt: Failed to obtain the token
+
+- For the 4.0 host (UIOT Smart Home App), please check if you have registered an account for version 5.0 (Super Smart Home App). If you have, you need to log in to the Super Smart Home App to cancel the account for version 5.0
+
+### Q2:The home name interface does not show the host name, and when you click Submit, an Unkown error occurred appears
+
+- Check the "About" section on the App to see if an alias has been set for the server. If no alias has been set, you need to set an individual name and log in again to submit
+
+### Q3:Which brands of air conditioners, fresh air systems and floor heating systems are currently supported
+- Brand air conditioners: Gree Air Conditioner FGR3.5D, Hitachi Air Conditioner PC-PIHHQ, Haier Casarte YCJ-A001
+- Brand fresh air systems: Adis Fresh Air KF-800RM, Boluo Fresh Air CS2, Jinuo Fresh Air
+- Brand floor heating: Orig water floor heating, Orig electric floor heating, YaTeLee6606 floor heating

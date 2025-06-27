@@ -34,14 +34,23 @@ async def async_setup_entry(
         name = switch_data.get("deviceName", "")
         deviceId = switch_data.get("deviceId", "")
         channelNum = switch_data.get("channelNum", "")
+        model = switch_data.get("model", "")
         _LOGGER.debug("name:%s", name)
         _LOGGER.debug("deviceId:%d", deviceId)
         _LOGGER.debug("channelNum:%d", channelNum)
+        _LOGGER.debug("model:%s", model)
         if channelNum == 0:
             deviceName = name
         else:
             uiot_dev: UIOTDevice = hass.data[DOMAIN].get("uiot_dev")
-            switch_data["mainDevieName"] = deviceName
+            if (
+                (model == "multi_series_panel_switch")
+                | (model == "ha_smart_socket")
+                | (model == "ha_ir_socket_kookong")
+            ):
+                switch_data["mainDevieName"] = ""
+            else:
+                switch_data["mainDevieName"] = deviceName
             entities.append(Switch(switch_data, uiot_dev, hass))
 
     async_add_entities(entities)
@@ -61,22 +70,32 @@ async def async_setup_entry(
 
             new_entities = []
 
-            for switch_data in device_data:
-                name = switch_data.get("deviceName", "")
-                deviceId = switch_data.get("deviceId", "")
-                channelNum = switch_data.get("channel", "")
+            for s_data in device_data:
+                name = s_data.get("deviceName", "")
+                deviceId = s_data.get("deviceId", "")
+                channelNum = s_data.get("channel", "")
+                model = switch_data.get("model", "")
                 _LOGGER.debug("name:%s", name)
                 _LOGGER.debug("deviceId:%d", deviceId)
                 _LOGGER.debug("channelNum:%d", channelNum)
+                _LOGGER.debug("model:%s", model)
                 if channelNum == 0:
                     deviceName = name
                     mainDeviceId = deviceId
                 else:
                     uiot_dev: UIOTDevice = hass.data[DOMAIN].get("uiot_dev")
-                    switch_data["mainDevieName"] = deviceName
-                    switch_data["mainDeviceId"] = str(mainDeviceId)
+                    if (
+                        (model == "multi_series_panel_switch")
+                        | (model == "ha_smart_socket")
+                        | (model == "ha_ir_socket_kookong")
+                    ):
+                        s_data["mainDevieName"] = ""
+                        s_data["mainDeviceId"] = str(deviceId)
+                    else:
+                        s_data["mainDevieName"] = deviceName
+                        s_data["mainDeviceId"] = str(mainDeviceId)
                     if not is_entity_exist(hass, deviceId):
-                        new_entities.append(Switch(switch_data, uiot_dev, hass))
+                        new_entities.append(Switch(s_data, uiot_dev, hass))
 
             if new_entities:
                 async_add_entities(new_entities)
